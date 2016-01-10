@@ -1,5 +1,5 @@
 @0
-
+## LEAST CYCLES
 
 @1
 MOV UP ACC
