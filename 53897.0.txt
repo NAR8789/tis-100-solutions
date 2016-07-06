@@ -2,18 +2,6 @@
 
 
 @1
-MOV UP DOWN
-
-@2
-
-
-@3
-
-
-@4
-
-
-@5
 ADD UP
 0: MOV -1 DOWN
 MOV -2 RIGHT
@@ -22,13 +10,25 @@ JGZ 0
 MOV 1 DOWN
 MOV -5 RIGHT
 
+@2
+MOV LEFT DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP DOWN
+
 @6
 # SUPPLY Y
 MOV 17 ACC
 JMP 0
 MOV ACC DOWN
 SUB 1
-0: JRO LEFT
+0: JRO UP
 
 @7
 
