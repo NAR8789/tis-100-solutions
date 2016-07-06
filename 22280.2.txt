@@ -1,0 +1,51 @@
+@0
+
+
+@1
+MOV UP ANY      #4
+
+@2
+0: MOV UP ACC #1
+JLZ L         #2
+JGZ G         #3
+E: JMP 0      #4
+L: MOV RIGHT NIL#3
+JMP 0         #4
+G: MOV LEFT NIL #4
+
+# ALWAYS 4 TICKS!
+
+@3
+MOV UP ANY      #3
+
+@4
+
+
+@5
+NOP
+NOP
+NOP
+0: NOP
+MOV ANY RIGHT   #4
+JMP 0
+
+@6
+MOV RIGHT ACC   #3
+ADD LEFT        #4
+MOV ACC DOWN
+
+@7
+NOP
+NOP
+0: NOP
+MOV ANY LEFT    #3
+JMP 0
+
+@8
+MOV 0 UP
+
+@9
+MOV UP DOWN
+
+@10
+MOV 0 UP
